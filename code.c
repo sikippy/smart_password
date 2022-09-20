@@ -64,8 +64,8 @@ void loop() {
       counter++;
       passStr +=key;
       if(counter==sprintf(passStr1, "%d", pass)){
-        const char* string1 = passStr.c_str();
-         atoi(string1)==atoi(passStr1)?setOnOff(greenLed,HIGH,10):setOnOff(redLed,HIGH,10);
+        const char* passStr2 = passStr.c_str();
+         atoi(passStr2)==atoi(passStr1)?setOnOff(greenLed,HIGH,10):setOnOff(redLed,HIGH,10);
       }    
       else{
         setOnOff(redLed,HIGH,10);
